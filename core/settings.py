@@ -16,6 +16,7 @@ from pathlib import Path
 import os
 import django_heroku
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -27,9 +28,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-@dr)9zqdj682rm4qq)+24(e+n!xj*ns)(ueim0i9y_=+jjj&o('
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://heartdisease-predictor-dark.herokuapp.com/']
 
 
 # Application definition
@@ -61,7 +62,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            BASE_DIR / 'templates'
+            os.path.join(BASE_DIR ,'templates')
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -125,9 +126,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR ,'static/')
-STATICFILES_DIR = [
-    'static',
-]
+STATICFILES_DIR = ( os.path.join(BASE_DIR ,'static/'),)
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
