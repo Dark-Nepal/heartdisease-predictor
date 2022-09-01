@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<div class="jumbotron py-5 container">
+    <h1 class="display-5">Hello, People!</h1>
+    <p class="lead ">
+      I've developed a web app for heart disease prediction using Machine Learning based on the Logistic regression.
+    </p>
+    <p>
+      Developed by <strong>Deepesh Mahato</strong>
+    </p>
+    <p class="lead">
+      <a class="btn btn-dark btn-lg" href="#" role="button">View on GitHub</a>
+    </p>
+  </div>
+
+
+
+  <section class="bg-primary py-5">
+    <div class="container">
+      <div class="row">
+       
+        <div class="col">
+          <div class="card mb-5 mb-lg-0">
+            <div class="card-body">
+              <h5 class="card-title text-muted text-center">
+                HEART DISEASE PREDICTION
+              </h5>
+
+              <hr />
+              <p class="">
+                One of the leading causes of death and mortality among the global population is heart disease.
+                 In the area of clinical data analysis, the prediction of cardiovascular disease is one of the 
+                 most crucial topics. In the healthcare sector, there is an enormous amount of data. The massive 
+                 number of unprocessed healthcare data is transformed through data mining into knowledge that may 
+                 support prediction and intelligent decision.
+              </p>
+              <div class="text-center">
+                <a
+                href="{% url 'heart' %}"
+                class="btn btn-block btn-danger "
+                >KNOW  HEART OF YOUR STATUS</a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      
+    
+      
+  </section>
+
+
+
+{% endblock %}
