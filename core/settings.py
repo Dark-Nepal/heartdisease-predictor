@@ -28,9 +28,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-@dr)9zqdj682rm4qq)+24(e+n!xj*ns)(ueim0i9y_=+jjj&o('
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG =True
 
-ALLOWED_HOSTS = ['https://heartdisease-predictor-dark.herokuapp.com/']
+ALLOWED_HOSTS = []
 
 
 # Application definition
